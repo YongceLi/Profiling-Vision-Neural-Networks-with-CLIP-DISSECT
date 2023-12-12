@@ -1,0 +1,19 @@
+{
+  "clip_model": "ViT-B/16",
+  "target_model": "vit_b_16",
+  "target_layers": [
+    "encoder",
+    "encoder.layers.encoder_layer_0",
+    "encoder.layers.encoder_layer_3",
+    "encoder.layers.encoder_layer_6",
+    "encoder.layers.encoder_layer_9"
+  ],
+  "d_probe": "broden",
+  "concept_set": "data/20k.txt",
+  "batch_size": 200,
+  "device": "cuda",
+  "activation_dir": "saved_activations",
+  "result_dir": "results",
+  "pool_mode": "avg",
+  "similarity_fn": "soft_wpmi"
+}

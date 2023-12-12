@@ -1,0 +1,19 @@
+{
+  "clip_model": "ViT-B/16",
+  "target_model": "resnet50",
+  "target_layers": [
+    "conv1",
+    "layer1",
+    "layer2",
+    "layer3",
+    "layer4"
+  ],
+  "d_probe": "broden",
+  "concept_set": "data/20k.txt",
+  "batch_size": 200,
+  "device": "cuda",
+  "activation_dir": "saved_activations",
+  "result_dir": "results",
+  "pool_mode": "avg",
+  "similarity_fn": "soft_wpmi"
+}
